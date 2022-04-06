@@ -1,0 +1,61 @@
+.card{
+    display: flex;
+    flex-direction: inherit;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+}
+p{
+    font-size: 12px;
+    line-height: 15px;
+    margin: 8px;
+}
+span{
+    font-weight: 500;
+}
+
+.movie-image{
+    margin-right: 20px;
+}
+
+.italic{
+    font-style: italic;
+}
+.title{
+    font-weight: 500;
+    font-size: 16px;
+}
+.rating{
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.movie-details{
+    font-size: 10px;
+    font-weight: 400;
+}
+.awards{
+    color: rgb(48, 197, 55);
+}
+.footer{
+    width: 60%;
+    margin: auto;
+}
+.footer-address{
+    float: left;
+    font-weight: 300;
+    font-size: 10px;
+}
+.metascored{
+    font-size: 14px;
+    margin-right: 5%;
+}
+.back-top{
+    float: right;
+    font-weight: 300;
+    font-size: 10px;
+    color: blueviolet;
+}
+.back-top:hover{
+    cursor: pointer;
+}

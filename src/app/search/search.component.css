@@ -1,0 +1,68 @@
+
+.search-container{
+    width: 35%;
+    margin: auto;
+    padding: 10px;
+}
+.search-card{
+    position: relative;
+    text-align: center;
+    top: 10px;
+    margin: 20px 0px 20px 0px;
+}
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{
+    background-color: #fff !important;
+}
+
+.example-full-width{
+    margin-top: 10px;
+}
+
+.button-round{
+    border-radius: 48%;
+    background-color: rgb(218, 13, 149);
+}
+
+.margin-top-10{
+    position: relative;
+    top: 5px;
+    color: white;
+}
+
+.loader img{
+    width: 300px;
+    height: 101px;
+    margin-left: 40%;
+}
+
+.findmovies{
+    border: 5px outset white;
+    display: flex;
+    padding: 65px;
+    flex-wrap: wrap;
+}
+
+.box{
+    margin-right: 60px;
+}
+
+.box:hover{
+    cursor: pointer;
+}
+
+.movie-image img{
+    height: 250px;
+    width: 200px;
+}
+
+.mat-card{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.movie-title{
+    font-weight: 600;
+    margin: 0;
+}
+
+

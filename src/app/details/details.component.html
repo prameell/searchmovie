@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">OMDB Movies</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Search</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div  *ngIf="(movieDetails | json) !== '{}';">
+  <div class="card">
+    <div class="movie-image">
+      <img class="card-img-top" src="{{movieDetails.Poster }}" alt="Card image" style="height: 250px; width:200px;">
+
+    </div>
+    <div>
+      <p><span class="metascored"> {{ movieDetails.Metascore }} </span>
+        <span class="title">{{ movieDetails.Title}}</span> </p>
+      <p><span class="rating"> {{ movieDetails.imdbRating }} </span> <span class="movie-details">R | {{
+          movieDetails.Runtime }} |
+          {{ movieDetails.Genre }} | {{ movieDetails.Language }} | {{ movieDetails.Released}} ( {{movieDetails.Country}}
+          )
+        </span></p>
+      <p class="awards"><span class="italic">Awards</span><br>
+        {{movieDetails.Awards}} </p>
+      <p><span class="italic">Summary</span> <br>
+        {{ movieDetails.Plot }} </p>
+      <p class="director">
+        <span class="italic">Director</span><br>
+        {{ movieDetails.Director }}
+      </p>
+      <p class="writer">
+        <span class="italic">Writer</span><br>
+        {{ movieDetails.Writer }}
+      </p>
+      <p class="actors">
+        <span class="italic">Actors</span><br>
+        {{ movieDetails.Actors }}
+      </p>
+      <p>
+        <span class="italic">Production</span><br>
+        {{ movieDetails.Production }}
+      </p>
+      <p>
+        <a style="text-decoration: none;" href="javascript: void(0)">see more in imdb</a>
+      </p>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="footer-address">@2020 OMDB Movies</span>
+    <span class="back-top" (click)="backToTop()"> Back to top</span>
+  </div>
+</div>
+
